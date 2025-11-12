@@ -3,97 +3,106 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Andrei Dobre</title>
-  <style>
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; margin:0; background:#000000; display:flex; justify-content:center; padding:20px; }
-    .card { background:white; border-radius:14px; box-shadow:0 8px 26px rgba(0,0,0,0.10); padding:18px; max-width:600px; width:100%; text-align:center; }
-    img { max-width:100%; border-radius:10px; }
-    audio { width:100%; margin-top:16px; }
-    h2 { margin-bottom:12px; }
-  </style>
-</head>
-<body>
-  <div class="card">
-    <h2></h2>
-    <img src="https://domitiantincaba.github.io/andrei_dobre/andrei_dobre.jpeg" alt="Andrei Dobre">
-<!doctype html>
-<html lang="ro">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dobre Andrei – omul cu două nume</title>
+  <title>Plt.maj Andrei Dobre – Contact Militar</title>
   <style>
     body {
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      background-color: #0d0d0d;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
       margin: 0;
-    }
-
-    .player {
-      background: #1c1c1e;
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #373737 0%, #000000 100%);
       color: #fff;
-      border-radius: 18px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-      padding: 16px;
-      max-width: 565px;
-      width: 100%;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 14px;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 20px;
     }
 
-    .cover {
-      width: 70px;
-      height: 70px;
-      border-radius: 10px;
-      object-fit: cover;
+    .card {
+      background: #3a3a3a;
+      border-radius: 18px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .photo {
+      width: 100%;
+      height: auto;
+      display: block;
     }
 
     .info {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      padding: 16px;
     }
 
     .title {
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-weight: 600;
-      margin: 0;
+      margin-bottom: 4px;
     }
 
-    .author {
-      font-size: 0.9rem;
-      color: #b3b3b3;
-      margin: 2px 0 6px;
+    .rank {
+      font-size: 0.95rem;
+      color: #b16e09;
+      margin-bottom: 10px;
     }
 
     audio {
       width: 100%;
-      outline: none;
+      margin-top: 10px;
+      border-radius: 6px;
       filter: invert(1) grayscale(1);
+    }
+
+    .whatsapp {
+      display: inline-block;
+      margin-top: 18px;
+      background-color: #25d366;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 18px;
+      border-radius: 30px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .whatsapp:hover {
+      background-color: #1ebe5d;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      color: #a9a9a9;
     }
   </style>
 </head>
 <body>
-  <div class="player">
-    <img class="cover" src="https://domitiantincaba.github.io/andrei_dobre/andrei_dobre.jpeg" alt="Coperta audio">
+  <div class="card">
+    <!-- FOTOGRAFIA MILITARĂ -->
+    <img class="photo" src="https://domitiantincaba.github.io/andrei_dobre/andrei_dobre.jpeg" alt="Lt. Andrei Dobre">
+
+    <!-- INFORMAȚII -->
     <div class="info">
-      <p class="title">Dobre Andrei – omul cu două nume</p>
-      <p class="author">Domitian Tincaba</p>
+      <div class="title">Plt.maj. Andrei Dobre</div>
+      <div class="rank">Forțele Terestre Române</div>
+
+      <!-- PLAYER AUDIO -->
       <audio controls autoplay>
         <source src="https://domitiantincaba.github.io/andrei_dobre/andrei_dobre.mp3" type="audio/mp3">
-        Browserul tău nu suportă playerul audio.
+        Browserul tău nu suportă redarea audio.
       </audio>
+
+      <!-- BUTON WHATSAPP -->
+      <a class="whatsapp" href="https://wa.me/40712345678" target="_blank">💬 Contact pe WhatsApp</a>
     </div>
   </div>
-</body>
-</html>
 
-  </div>
+  <footer>© 2025 Made with &#9829; by Domitian Tincaba</footer>
 </body>
 </html>
